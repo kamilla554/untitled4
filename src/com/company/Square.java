@@ -1,6 +1,6 @@
 package com.company;
 
-public class Square extends Rectangle {
+public class Square extends Rectangle implements MovablePoint {
     private double side;
     public Square() {
     }
@@ -39,5 +39,11 @@ public class Square extends Rectangle {
                 ", color='" + color + '\'' +
                 ", filled=" + filled +
                 '}';
+    }
+    @Override
+    public void movePoint(float a, float b)
+    {
+        a+=0.01;
+        b+=0.01;
     }
 }

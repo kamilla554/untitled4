@@ -1,6 +1,6 @@
 package com.company;
 
-public class Circle extends Shape {
+public class Circle extends Shape implements MovableCircle {
     protected double radius;
 
     public Circle() {
@@ -40,5 +40,11 @@ public class Circle extends Shape {
                 ", color='" + color + '\'' +
                 ", filled=" + filled +
                 '}';
+    }
+
+    @Override
+    public void moveCircle(float a, float b) {
+        a+=0.01;
+        b+=0.01;
     }
 }

@@ -1,6 +1,6 @@
 package com.company;
 
-public class Rectangle extends Shape{
+public class Rectangle extends Shape {
     protected double width;
     protected double length;
 
